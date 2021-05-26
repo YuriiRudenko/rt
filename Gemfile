@@ -21,9 +21,11 @@ gem 'sass-rails'
 gem 'slim-rails'
 gem 'social-share-button'
 gem 'uglifier'
+gem 'active_model_serializers'
 
 group :development do
   gem 'listen'
+  gem 'pry-rails'
   gem 'spring'
   gem 'spring-watcher-listen'
 end
