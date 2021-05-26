@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'active_model_serializers'
 gem 'best_in_place'
 gem 'bootstrap-sass'
 gem 'carrierwave'
@@ -16,16 +17,16 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'kaminari'
 gem 'pg', '~> 0.20'
 gem 'puma'
-gem 'rails', '5.1.1'
+gem 'rails', '6.0'
 gem 'sass-rails'
 gem 'slim-rails'
 gem 'social-share-button'
 gem 'uglifier'
-gem 'active_model_serializers'
 
 group :development do
   gem 'listen'
   gem 'pry-rails'
+  gem 'rubocop'
   gem 'spring'
   gem 'spring-watcher-listen'
 end

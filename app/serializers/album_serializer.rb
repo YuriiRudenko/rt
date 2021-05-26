@@ -3,7 +3,7 @@ class AlbumSerializer < ActiveModel::Serializer
   attributes :id, :name, :author, :amount_photo, :updated_at
 
   def author
-    self.object.user.display_name
+    object.user.display_name
   end
 
   def amount_photo
