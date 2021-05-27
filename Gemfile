@@ -13,6 +13,7 @@ gem 'coffee-rails'
 gem 'devise'
 gem 'jbuilder'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'jwt'
 gem 'kaminari'
 gem 'pg'
 gem 'puma'
@@ -25,7 +26,9 @@ gem 'social-share-button'
 gem 'uglifier'
 
 group :development do
+  gem 'dotenv-rails'
   gem 'listen'
+  gem 'pry'
   gem 'spring'
   gem 'spring-watcher-listen'
 end
