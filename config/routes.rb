@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'home#show'
 
+  mount API => '/'
+
   devise_for :users, controllers: { registrations: 'users/registrations' }
 
   devise_scope :user do
