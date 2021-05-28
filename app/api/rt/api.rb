@@ -3,7 +3,7 @@ module Rt
     format :json
     prefix :api
 
-    helpers Rt::Helpers::Shared
+    helpers Rt::Helpers::Auth
 
     mount Endpoints::Albums
     mount Endpoints::Photos

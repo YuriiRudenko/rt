@@ -1,11 +1,7 @@
 module Rt
   module Helpers
-    module Shared
+    module Auth
       attr_reader :current_user
-
-      def declared_params
-        declared(params, include_missing: false).with_indifferent_access
-      end
 
       def authenticate
         _, headers_token = headers['Authorization'].split
@@ -16,10 +12,6 @@ module Rt
       rescue JWT::DecodeError
         error_response = { error: I18n.t('devise.failure.unauthenticated') }
         error!(error_response, 401)
-      end
-
-      def present_validation_error_for(record)
-        present error: record.errors.messages
       end
     end
   end
