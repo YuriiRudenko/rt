@@ -1,4 +1,4 @@
-class RestoreMigration < ActiveRecord::Migration[5.1]
+class RestoreMigration < ActiveRecord::Migration[6.1]
   def change
     create_table :albums do |t|
         t.bigint 'user_id'

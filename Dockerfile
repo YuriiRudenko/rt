@@ -1,4 +1,4 @@
-FROM ruby:2.5.0
+FROM ruby:3.0.1
 RUN apt-get update && apt-get install -qq -y build-essential git nodejs libpq-dev cmake libgit2-dev pkg-config --fix-missing --no-install-recommends
 
 RUN mkdir /app

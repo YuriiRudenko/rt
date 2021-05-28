@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'best_in_place'
+gem 'best_in_place', git: "https://github.com/mmotherwell/best_in_place"
 gem 'bootstrap-sass'
 gem 'carrierwave'
 gem 'cocoon'
@@ -19,12 +19,11 @@ gem 'pg'
 gem 'puma'
 gem 'grape'
 gem 'grape-entity'
-gem 'rails', '6.0'
+gem 'rails'
 gem 'sass-rails'
 gem 'slim-rails'
 gem 'social-share-button'
 gem 'uglifier'
-gem "webpacker"
 
 group :development do
   gem 'dotenv-rails'
