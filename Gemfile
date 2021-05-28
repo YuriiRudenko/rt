@@ -19,11 +19,12 @@ gem 'pg'
 gem 'puma'
 gem 'grape'
 gem 'grape-entity'
-gem 'rails', '5.2'
+gem 'rails', '6.0'
 gem 'sass-rails'
 gem 'slim-rails'
 gem 'social-share-button'
 gem 'uglifier'
+gem "webpacker"
 
 group :development do
   gem 'dotenv-rails'
