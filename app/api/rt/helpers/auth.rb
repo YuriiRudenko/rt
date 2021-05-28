@@ -4,7 +4,7 @@ module Rt
       attr_reader :current_user
 
       def authenticate
-        _, headers_token = headers['Authorization'].split
+        headers_token = headers['Authorization']
 
         token, = JWT.decode  headers_token, ENV.fetch('AUTH_SECRET'), true, { algorithm: 'HS256' }
 
