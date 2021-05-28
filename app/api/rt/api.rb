@@ -1,6 +1,5 @@
 module Rt
   class API < Grape::API
-
     format :json
     prefix :api
 
