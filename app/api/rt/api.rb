@@ -9,6 +9,5 @@ module Rt
     mount Endpoints::Albums
     mount Endpoints::Photos
     mount Endpoints::Auth
-    mount Endpoints::Users
   end
 end
