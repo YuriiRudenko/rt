@@ -4,6 +4,7 @@ module Rt
     version 'v1'
     prefix :api
     mount Rt::Albums
+    mount Rt::Photos
   end
 end
 
