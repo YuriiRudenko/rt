@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'best_in_place'
+gem 'bootsnap', require: false
 gem 'bootstrap-sass'
 gem 'carrierwave'
 gem 'cocoon'
@@ -19,7 +20,7 @@ gem 'grape-entity'
 gem 'kaminari'
 gem 'pg'
 gem 'puma'
-gem 'rails', '5.1.7'
+gem 'rails', '5.2.0'
 gem 'sass-rails'
 gem 'slim-rails'
 gem 'social-share-button'
